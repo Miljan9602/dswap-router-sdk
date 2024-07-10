@@ -1,5 +1,6 @@
 #build 
 dist
+.npmrc
 
 #dependencies
 node_modules

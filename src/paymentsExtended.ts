@@ -1,7 +1,7 @@
 import { Interface } from '@ethersproject/abi'
-import { Percent, Token, validateAndParseAddress } from '@uniswap/sdk-core'
-import { abi } from '@uniswap/swap-router-contracts/artifacts/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol/IPeripheryPaymentsWithFeeExtended.json'
-import { FeeOptions, Payments, toHex } from '@uniswap/v3-sdk'
+import { Percent, Token, validateAndParseAddress } from '@miljan9602/dswap-sdk-core'
+import { abi } from '@dragonswap/swap-router-contracts/artifacts/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol/IPeripheryPaymentsWithFeeExtended.json'
+import { FeeOptions, Payments, toHex } from '@miljan9602/dswap-v3-sdk'
 import JSBI from 'jsbi'
 
 function encodeFeeBips(fee: Percent): string {
@@ -26,13 +26,13 @@ export abstract class PaymentsExtended {
       const feeBips = encodeFeeBips(feeOptions.fee)
       const feeRecipient = validateAndParseAddress(feeOptions.recipient)
 
-      return PaymentsExtended.INTERFACE.encodeFunctionData('unwrapWETH9WithFee(uint256,uint256,address)', [
+      return PaymentsExtended.INTERFACE.encodeFunctionData('unwrapWSEIWithFee(uint256,uint256,address)', [
         toHex(amountMinimum),
         feeBips,
         feeRecipient,
       ])
     } else {
-      return PaymentsExtended.INTERFACE.encodeFunctionData('unwrapWETH9(uint256)', [toHex(amountMinimum)])
+      return PaymentsExtended.INTERFACE.encodeFunctionData('unwrapWSEI(uint256)', [toHex(amountMinimum)])
     }
   }
 
@@ -70,6 +70,6 @@ export abstract class PaymentsExtended {
   }
 
   public static encodeWrapETH(amount: JSBI): string {
-    return PaymentsExtended.INTERFACE.encodeFunctionData('wrapETH', [toHex(amount)])
+    return PaymentsExtended.INTERFACE.encodeFunctionData('wrapSEI', [toHex(amount)])
   }
 }
