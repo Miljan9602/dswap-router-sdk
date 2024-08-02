@@ -1,4 +1,4 @@
-# @uniswap/router-sdk - Now at `Uniswap/sdks`
+# @miljan9602/dswap-router-sdk - Now at `Uniswap/sdks`
 
 All versions after 1.9.0 of this SDK can be found in the [SDK monorepo](https://github.com/Uniswap/sdks/tree/main/sdks/router-sdk)! Please file all future issues, PR’s, and discussions there.
 
