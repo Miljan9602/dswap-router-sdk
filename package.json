@@ -28,9 +28,9 @@
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
     "@dragonswap/swap-router-contracts": "git+ssh://git@github.com:dragonswap-app/swap-router-contracts.git",
-    "@miljan9602/dswap-sdk-core": "github:Miljan9602/dswap-sdk-core#staging-mainnet",
-    "@miljan9602/dswap-v2-sdk": "github:Miljan9602/dswap-v2-sdk#staging-mainnet",
-    "@miljan9602/dswap-v3-sdk": "github:Miljan9602/dswap-v3-sdk#staging-mainnet"
+    "@miljan9602/dswap-sdk-core": "github:Miljan9602/dswap-sdk-core#main",
+    "@miljan9602/dswap-v2-sdk": "github:Miljan9602/dswap-v2-sdk#main",
+    "@miljan9602/dswap-v3-sdk": "github:Miljan9602/dswap-v3-sdk#main"
     
   },
   "devDependencies": {
