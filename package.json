@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
-    "@dragonswap/swap-router-contracts": "git+ssh://git@github.com:dragonswap-app/swap-router-contracts.git",
+    "@dragonswap/swap-router-contracts": "github:dragonswap-app/swap-router-contracts#master",
     "@miljan9602/dswap-sdk-core": "github:Miljan9602/dswap-sdk-core#main",
     "@miljan9602/dswap-v2-sdk": "github:Miljan9602/dswap-v2-sdk#main",
     "@miljan9602/dswap-v3-sdk": "github:Miljan9602/dswap-v3-sdk#main"
